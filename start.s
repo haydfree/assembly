@@ -26,49 +26,49 @@ section .text
 _start:
     mov rax, 0
 
-add:
-    mov rax, [a]
-    add rax, [b]
-    mov [result], rax
-    jmp output
-
-sub:
-    mov rax, [a]
-    sub rax, [b]
-    mov [result], rax
-    jmp output
-
-mul:
-    mov eax, [a]
-    mov edx, 0
-    mul dword [b]
-    mov [result], eax
-    jmp output
-
-div:
-    mov eax, [a]
-    mov edx, 0
-    div dword [b]
-    mov [result], eax
-    jmp output
-
-write:
-    mov rax, 1
-    mov rdi, 1
-    syscall
-    ret
-
-read:
-    mov rax, 0
-    mov rdi, 0
-    syscall
-    ret
-
-exit:
-    mov rax, 60
-    mov rdi, 0
-    syscall
-    ret
+;add:
+;    mov rax, [a]
+;    add rax, [b]
+;    mov [result], rax
+;    jmp output
+;
+;sub:
+;    mov rax, [a]
+;    sub rax, [b]
+;    mov [result], rax
+;    jmp output
+;
+;mul:
+;    mov eax, [a]
+;    mov edx, 0
+;    mul dword [b]
+;    mov [result], eax
+;    jmp output
+;
+;div:
+;    mov eax, [a]
+;    mov edx, 0
+;    div dword [b]
+;    mov [result], eax
+;    jmp output
+;
+;write:
+;    mov rax, 1
+;    mov rdi, 1
+;    syscall
+;    ret
+;
+;read:
+;    mov rax, 0
+;    mov rdi, 0
+;    syscall
+;    ret
+;
+;exit:
+;    mov rax, 60
+;    mov rdi, 0
+;    syscall
+;    ret
 
 output:
     mov rsi, msganswer

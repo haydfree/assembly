@@ -7,15 +7,16 @@ section .text
 
 _start:
 
-exit1:
-    mov rax, 60
-    mov rdi, 1
-    syscall
-    ret
 
 exit0:
     mov rax, 60
     mov rdi, 0
+    syscall
+    ret
+
+exit1:
+    mov rax, 60
+    mov rdi, 1
     syscall
     ret
 

@@ -161,7 +161,7 @@ output:
     mov rax, 1
     mov rdi, 1
     mov rsi, result
-    mov rdx, 10
+    mov rdx, 4
     syscall
 
     ; exit()

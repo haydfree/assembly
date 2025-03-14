@@ -54,13 +54,13 @@ sub:
 
 mul:
     mov eax, [a]
-    mul [b]
+    mul b
     mov [result], eax
     jmp output
 
 div:
     mov eax, [a]
-    div [b]
+    div b
     mov [result], eax
     jmp output
 

@@ -20,7 +20,7 @@ _start:
     call write
 
     mov rsi, a
-    mov rdx, 4
+    mov rdx, 1
     call read
 
     mov rsi, msgb

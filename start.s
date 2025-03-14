@@ -6,6 +6,8 @@ section .text
     global _start
 
 _start:
+    mov rsi, 48
+    mov rdx, 1
     call exit
 
 read:

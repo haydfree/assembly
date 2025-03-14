@@ -2,7 +2,7 @@ section .bss
     a resd 1
     b resd 1
     op resb 1
-    res resd 1
+    result resd 1
 
 section .text
     global _start

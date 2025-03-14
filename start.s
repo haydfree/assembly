@@ -8,7 +8,7 @@ section .text
 _start:
     mov rax, 0
 
-exit0:
+exit:
     mov rax, 60
     mov rdi, 0
     syscall

@@ -32,7 +32,7 @@ _start:
     mov rax, 1
     mov rdi, 1
     mov rsi, a
-    mov rdx, 4
+    mov rdx, 13
     syscall
 
     ; write() a back to user

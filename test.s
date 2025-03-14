@@ -30,27 +30,23 @@ add:
     mov rax, [a]
     add rax, [b]
     mov [result], rax
-    jmp output
 
 sub:
     mov rax, [a]
     sub rax, [b]
     mov [result], rax
-    jmp output
 
 mul:
     mov eax, [a]
     mov edx, 0
     mul dword [b]
     mov [result], eax
-    jmp output
 
 div:
     mov eax, [a]
     mov edx, 0
     div dword [b]
     mov [result], eax
-    jmp output
 
 write:
     mov rax, 1

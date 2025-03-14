@@ -9,7 +9,7 @@ section .bss
     a resb 8
     b resb 8
     op resb 8
-    result resb 1
+    result resb 8
 
 section .text
     global _start

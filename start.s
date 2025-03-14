@@ -44,10 +44,6 @@ div:
     mov [result], eax
     jmp output
 
-output:
-
-; subroutines
-
 write:
     mov rax, 1
     mov rdi, 1

@@ -43,7 +43,7 @@ _start:
 add:
     mov rax, a
     add rax, b
-    mov[result], rax
+    mov [result], rax
     jmp output
 
 sub:

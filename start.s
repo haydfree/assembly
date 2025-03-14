@@ -27,6 +27,13 @@ _start:
     mov rdx, 4
     syscall
 
+    ; write() a back to user
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, msga
+    mov rdx, 16 
+    syscall
+
     ; write() message about entering b
     mov rax, 1
     mov rdi, 1

@@ -13,6 +13,16 @@ section .text
 _start:
     call exit
 
+add:
+    mov rax, [a]
+    add rax, [b]
+    mov [result], rax
+
+sub:
+    mov rax, [a]
+    sub rax, [b]
+    mov [result], rax
+
 read:
     mov rax, 0
     mov rdi, 0

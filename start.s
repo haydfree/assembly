@@ -26,7 +26,6 @@ section .text
 _start:
     mov rsi, msga
     mov rdx, [msganswersize] 
-    call write
 
 
 add:

@@ -23,11 +23,11 @@ _start:
     mov rdx, 1
     call read
 
-    mov rsi, msga
+    mov rsi, msgb
     mov rdx, msgabsize
     call write
 
-    mov rsi, a
+    mov rsi, b
     mov rdx, 1
     call read
 

@@ -19,7 +19,7 @@ _start:
     mov rdi, 1
     mov rsi, msga
     ;mov rdx, 9
-    movzx rdx, [msgabsize]
+    movzx rdx, byte [msgabsize]
     syscall
 
     mov rax, 0

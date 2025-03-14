@@ -75,7 +75,7 @@ _start:
     mov rax, 1
     mov rdi, 1
     mov rsi, msgop
-    mov rdx, 14
+    mov rdx, 15
     syscall
 
     ; read() op

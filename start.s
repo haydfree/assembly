@@ -7,9 +7,6 @@ section .text
 
 
 _start:
-    mov rax, 60
-    mov rdi, 0
-    syscall
 
 exit:
     mov rax, 60

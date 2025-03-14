@@ -29,7 +29,7 @@ _start:
 
     mov rax, 1
     mov rdi, 1
-    mov rsi, msga
+    mov rsi, msgb
     mov rdx, [msgabsize]
     syscall
 

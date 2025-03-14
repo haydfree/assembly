@@ -104,7 +104,7 @@ _start:
     mov rax, 1
     mov rdi, 1
     mov rsi, [nl]
-    mov rdx, 1
+    mov rdx, 2
     syscall
 
     ; branches

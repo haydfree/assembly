@@ -136,7 +136,14 @@ div:
     jmp output
 
 output:
-    ; write()
+    ; write() answer message
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, msganswer
+    mov rdx, 4
+    syscall
+    
+    ; write() answer
     mov rax, 1
     mov rdi, 1
     mov rsi, result

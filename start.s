@@ -19,9 +19,11 @@ _start:
     mov rdx, [msgabsize]
     call write
 
+    mov rax, 0
+    mov rdi, 0
     mov rsi, a
     mov rdx, 1
-    call read
+    syscall
 
     mov rsi, msgb
     mov rdx, [msgabsize]

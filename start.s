@@ -1,5 +1,5 @@
 section .data
-    text db "hello world",10
+    text db "hello world"
     a dd 0
 
 section .text

@@ -12,7 +12,7 @@ _start:
     mov al, [a]
     add al, [b]
     add al, [ascii0]
-    mov result, rax
+    mov result, al
     mov rdx, 1
     call write
     call exit

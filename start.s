@@ -15,21 +15,29 @@ section .text
     global _start
 
 _start:
+    mov rax, 1
+    mov rdi, 1
     mov rsi, msga
     mov rdx, [msgabsize]
-    call write
+    syscall
 
+    mov rax, 0
+    mov rdi, 0
     mov rsi, a
     mov rdx, 8
-    call read
+    syscall
 
+    mov rax, 1
+    mov rdi, 1
     mov rsi, msgb
     mov rdx, [msgabsize]
-    call write
+    syscall
 
+    mov rax, 0
+    mov rdi, 0
     mov rsi, b
     mov rdx, 8
-    call read
+    syscall
 
     call exit
 

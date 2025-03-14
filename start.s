@@ -49,14 +49,16 @@ _start:
     mov rsi, rcx
     movzx rdx, byte [absize]
     call write
-    
-    mov rsi, op
-    add rsi, [ascii0]
-    movzx rdx, byte [opsize]
+
+    mov rcx, [a] 
+    call convert
+    mov rsi, rcx
+    movzx rdx, byte [absize]
     call write
-    
-    mov rsi, b
-    add rsi, [ascii0]
+
+    mov rcx, [a] 
+    call convert
+    mov rsi, rcx
     movzx rdx, byte [absize]
     call write
 

@@ -100,11 +100,11 @@ _start:
     syscall
 
     ; write() line break
-    mov rax, 1
-    mov rdi, 1
-    mov rsi, '\n'
-    mov rdx, 1
-    syscall
+    ;mov rax, 1
+    ;mov rdi, 1
+    ;mov rsi, '\n'
+    ;mov rdx, 1
+    ;syscall
 
     ; branches
     mov al, [op]

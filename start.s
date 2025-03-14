@@ -19,7 +19,7 @@ _start:
     mov rax, 0
     mov rdi, 0
     mov rsi, b
-    mov rdx, 10
+    mov rdx, 4
     syscall
 
     ; write()

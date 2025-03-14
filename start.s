@@ -12,4 +12,4 @@ exit:
     ret
 
 _start:
-
+    call exit

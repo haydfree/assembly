@@ -32,7 +32,7 @@ _start:
     movzx rdx, byte [absize]
     call read
 
-    movzx rcx, byte [ascii0]
+    mov rcx, 48 
     add rcx, [a]
     mov [astr], rcx
     mov rsi, astr

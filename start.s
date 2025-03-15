@@ -1,5 +1,5 @@
 section .data
-    prompt db "enter op1, op2, oper", 0
+    prompt db "enter op1, op2, oper",10,0
     prompt_len dq $ - prompt
 
 section .bss

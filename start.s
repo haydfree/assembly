@@ -62,10 +62,6 @@ _start:
     cmp al, 43
     je add
 
-    mov rsi, dnj
-    mov rdx, dnj_len
-    call write
-
     call exit
 
 finish:

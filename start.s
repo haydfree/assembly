@@ -11,6 +11,7 @@ section .text
 _start:
     mov rsi, prompt
     movzx rdx, byte [prompt_len]
+    call write
 
     call exit
 

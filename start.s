@@ -17,6 +17,7 @@ _start:
     mov rsi, buffer
     mov rdx, 32
     call read
+
     mov [a], [buffer]
     mov rcx, [a]
     add rcx, 48

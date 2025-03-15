@@ -30,6 +30,7 @@ _start:
 
     mov rsi, a
     movzx rdx, byte [absize]
+    call read
 
     call exit
 

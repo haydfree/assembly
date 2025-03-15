@@ -17,6 +17,10 @@ _start:
     mov rdx, [prompt_len]
     call write
 
+    mov rsi, buffer
+    mov rdx, 8
+    call read
+
 finish:
     mov rcx, [res]
     call convert_to_str

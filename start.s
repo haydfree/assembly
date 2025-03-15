@@ -10,7 +10,7 @@ section .text
 
 _start:
     mov rsi, prompt
-    mov rdx, [prompt_len]
+    mov rdx, prompt_len
     call write
 
     call exit

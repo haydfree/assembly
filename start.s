@@ -13,7 +13,9 @@ section .text
     global _start
 
 _start:
-    
+    mov rsi, prompt
+    mov rdx, [prompt_len]
+    call write
 
 finish:
     mov rcx, [res]

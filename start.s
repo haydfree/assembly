@@ -21,12 +21,13 @@ _start:
     mov rdx, 8
     call read
 
-    mov al, [buffer]
-    mov [res], al
+    mov rcx, [buffer]
+    mov [res], rcx
     mov rsi, res
     mov rdx, 8
     call write
 
+    call exit
 
 finish:
     mov rcx, [res]
